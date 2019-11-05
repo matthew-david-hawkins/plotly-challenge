@@ -41,10 +41,6 @@ function buildCharts(sample) {
     otuIds = obj.otu_ids;
     otuLabels = obj.otu_labels;
     colorIds = otuIds.map(id => otuIds.indexOf(id));
-    //colorIds = otuIds.map(id => "#" + (otuIds.indexOf(id)).toString(16));
-    console.log(colorIds);
-    console.log(colorIds.slice(0,10));
-
 
     // Build plotly data object
     var data = [{
